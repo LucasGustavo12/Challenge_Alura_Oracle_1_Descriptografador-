@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,47 @@
   <title>Descriptografador?</title>
   <link rel="stylesheet" href="estilo/reset.css">
   <link rel="stylesheet" href="estilo/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="a">
-  <h1>a</h1>
-</div>
-<div class="tcp">
-  <input type="text" id="lbl1" value=" " placeholder="Digite seu texto">
-</div>
-<div class="btns">
-<p>❕Apenas letras minúsculas e sem acento.</p>
-<button id="btnc">Criptografar</button>
-<button id="btnd">Descriptografar</button>
-</div>
-  <div class="col-b">
-    <textarea name="" id="" cols="50" rows="10"></textarea>
-    <img src="imgs/menino.png" alt="">
-    <p id="msg"><bold>Nenhuma mensagem encontrada</bold></p>
-    <p>Digite o texto que você deseja <br>
-      criptografar ou descriptografar</p>
-      <button id="btncp">Copiar</button>
-  </div>
+  <header>
+    <div class="logo">
+    <img src="imgs/icon.png" alt="">
+    </div>
+  </header>
 
-
+  <section class = "container">
+    <div class="container-areaa">
+      <div class="tcp">
+        <textarea type="text" id="text_area1" value=" " placeholder="Digite seu texto"></textarea>
+      </div>
+      <div class="btns">
+        <div class="btns-msg">
+          <img src="imgs/Vector.png" alt="ponto de exclamacao" width="16px" height="16px">
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div class ="btns-btn">
+          <button id="btnc">Criptografar</button>
+          <button id="btnd">Descriptografar</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-areab">
+      <div class="col-b">
+        <textarea class="textarea2" type ="text"  id="textarea2" name=""></textarea>
+        <img src="imgs/menino.png" alt="menino-com-lupa" width="336" height="334">
+        <p id="msg-b">
+          <bold>Nenhuma mensagem encontrada</bold>
+        </p>
+        <p>Digite o texto que você deseja <br>
+          criptografar ou descriptografar</p>
+        <button class="btncp" id="btncp" onclick="copiarTexto()">Copiar</button>
+      </div>
+    </div>
+</section>
+<script src="js/script.js"></script>
 </body>
 </html>

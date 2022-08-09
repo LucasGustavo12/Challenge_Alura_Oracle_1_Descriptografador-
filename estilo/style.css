@@ -101,7 +101,7 @@ background-color: #FFF;
 right: 40px;
 top: 40px;
 width: 400px;
-height: 93vh;
+height: 85vh;
 border-radius: 32px;
 padding: 20px;
 display: flex;
@@ -109,9 +109,23 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: -15%;
+
 }
 
-#textarea2 {   
+#msg-b{
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#msg-c{
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+#texto {   
   cursor: text;
   font-weight: 400;
   font-size: 32px;
@@ -122,8 +136,8 @@ margin-top: -15%;
   font-family: 'Inter';
   font-style: normal;
   width: 349px;
-  height: 290px;
   resize: none;
+  height: 684px;
 }
 
 #btncp {
@@ -134,7 +148,8 @@ margin-top: -15%;
   text-align: center;
   color: #0A3871;
   font-size: 16px;
-  cursor:pointer;
+  cursor: pointer;
   border: 2px solid #0A3871;
-
+  margin-top: 12%;
+  display: none;
 }

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Descriptografador?</title>
+  <script src="js/script.js"></script>
   <link rel="stylesheet" href="estilo/reset.css">
   <link rel="stylesheet" href="estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,24 +32,28 @@
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class ="btns-btn">
-          <button id="btnc">Criptografar</button>
+          <button id="btnc"onclick="crip()">Criptografar</button>
           <button id="btnd">Descriptografar</button>
         </div>
       </div>
     </div>
     <div class="container-areab">
       <div class="col-b">
-        <textarea class="textarea2" type ="text"  id="textarea2" name=""></textarea>
-        <img src="imgs/menino.png" alt="menino-com-lupa" width="336" height="334">
-        <p id="msg-b">
-          <bold>Nenhuma mensagem encontrada</bold>
-        </p>
-        <p>Digite o texto que você deseja <br>
-          criptografar ou descriptografar</p>
-        <button class="btncp" id="btncp" onclick="copiarTexto()">Copiar</button>
+        <textarea class="text" type ="text"  id="texto" name=""></textarea>
+        <div id="imagem-msg">
+          <img src="imgs/menino.png" alt="menino-com-lupa" width="336" height="334">
+          <p id="msg-b">
+            <bold>Nenhuma mensagem <br> encontrada</bold>
+          </p>
+          <p id="msg-c">Digite o texto que você deseja <br>
+            criptografar ou descriptografar</p>
+        </div>
+          <div>
+            <button class="btncp" id="btncp" onclick="copiarTexto()">Copiar</button>
+          </div>
       </div>
     </div>
 </section>
-<script src="js/script.js"></script>
+
 </body>
 </html>

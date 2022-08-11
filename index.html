@@ -24,22 +24,22 @@
   <section class = "container">
     <div class="container-areaa">
       <div class="tcp">
-        <textarea type="text" id="text_area1" value=" " placeholder="Digite seu texto"></textarea>
+        <textarea type="text" id="text_area1" autocomplete="off" value=" " placeholder="Digite seu texto"></textarea>
       </div>
       <div class="btns">
         <div class="btns-msg">
           <img src="imgs/Vector.png" alt="ponto de exclamacao" width="16px" height="16px">
-          <p>Apenas letras minúsculas e sem acento.</p>
+          <p class="disclaimer">Apenas letras minúsculas e sem acento.</p>
         </div>
         <div class ="btns-btn">
-          <button id="btnc"onclick="crip()">Criptografar</button>
-          <button id="btnd">Descriptografar</button>
+          <button class="btnc" id="btnc" onclick="criptografarTexto()">Criptografar</button>
+          <button id="btnd" onclick="descriptografar()">Descriptografar</button>
         </div>
       </div>
     </div>
     <div class="container-areab">
       <div class="col-b">
-        <textarea class="text" type ="text"  id="texto" name=""></textarea>
+        <textarea class="text" type ="text"  id="texto" name="" autocomplete="off"></textarea>
         <div id="imagem-msg">
           <img src="imgs/menino.png" alt="menino-com-lupa" width="336" height="334">
           <p id="msg-b">

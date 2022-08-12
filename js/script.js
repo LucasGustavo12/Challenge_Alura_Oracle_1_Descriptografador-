@@ -65,8 +65,12 @@ function desencriptarTexto(texto){
     textarea2.value = criptografar(textarea1.value);
     console.log(textarea1.value);
     }); 
+    imageNull();
 
-//limpar imagem ao lado no bloco-b
+  }
+
+  //limpar imagem ao lado no bloco-b
+  function imageNull(){
     let textoArea = document.getElementById("text_area1").value;
     if(textoArea.length === 0) {
     alert('Digite alguma mensagem!');
@@ -82,8 +86,9 @@ function desencriptarTexto(texto){
     let textarea2 = document.getElementById("texto");
     const btndescrip = document.getElementById("btnd");
     btndescrip.addEventListener('click', function(){
-    textarea1.value = desencriptarTexto(textarea2.value);
+    textarea2.value = desencriptarTexto(textarea1.value);
     console.log(textarea2.value);
-
     });
+    imageNull();
   }
+  
